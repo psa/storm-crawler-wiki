@@ -1,0 +1,1 @@
+[PopSugar  - microdata parser](https://github.com/PopSugar/storm-crawler-extensions)
