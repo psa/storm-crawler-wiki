@@ -1,2 +1,2 @@
 * _**StormCrawler in the wild**_ [pdf](https://drive.google.com/file/d/0B4ebzXTbUoiARUFoSVZKWkFuMkZTVnRsRnJBYm5GdHFyRjhV/view?usp=sharing) by Jake Dodd - [Ontopic](http://www.ontopic.io/)
-* _**A quick introduction to Storm Crawler**_ [pdf](https://drive.google.com/file/d/0B4ebzXTbUoiAYkxvMUIzVTkwWFU/view?usp=sharing) by Julien Nioche. ApacheCon Europe, Budapest, Nov 2014 
+* _**A quick introduction to Storm Crawler** (http://www.slideshare.net/digitalpebble/j-nioche-apacheconeu2014fastfeather) by Julien Nioche. ApacheCon Europe, Budapest, Nov 2014 
