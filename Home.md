@@ -1,4 +1,12 @@
-Welcome to the storm-crawler wiki!
+# Welcome to the storm-crawler wiki!
+
+## Getting Started
+TBD
+
+## Components
+* [[Protocols]]: Network protocols that are usable in storm-crawler
+
+## Resources
 
 [Presentations](https://github.com/DigitalPebble/storm-crawler/wiki/Presentations)
 
