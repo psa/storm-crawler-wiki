@@ -1,0 +1,1 @@
+Storm-crawler can handle sitemap files thanks to the SiteMapParserBolt. 
