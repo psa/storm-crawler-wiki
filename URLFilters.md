@@ -1,13 +1,13 @@
-The URL filters can be used to both remove or modify incoming URLS (unlike Nutch where these functionalities are separated between URLFilters and URLNormalizers).
+The URL filters can be used to both remove or modify incoming URLS (unlike Nutch where these functionalities are separated between URLFilters and URLNormalizers). This is used generally within a parsing bolt to normalise and filter outgoing URLs, but is also called within the FetcherBolt to handle redirections.
 
-URLFilters need to implement the interface URLFilter which has two methods : 
+URLFilters need to implement the interface [URLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/filtering/URLFilter.java) which has two methods : 
 
 _public String filter (URL sourceUrl, Metadata sourceMetadata,
             String urlToFilter);_
 
 _public void configure(Map stormConf, JsonNode jsonNode);_
 
-The configuration is done via a JSON file which is loaded by the wrapper class URLFilters. The URLFilter instances can be used directly but it is easier to use the class URLFilters instead. The config map from Storm can also be used.
+The configuration is done via a JSON file which is loaded by the wrapper class [URLFilters](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/filtering/URLFilters.java). The URLFilter instances can be used directly but it is easier to use the class URLFilters instead. The config map from Storm can also be used to configure the filters.
 
 Here is an example of a [JSON configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/src/main/resources/urlfilters.json).
 
@@ -26,4 +26,3 @@ The [RegexURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/
 
 **RegexURLNormalizer**
 The [RegexURLNormalizer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/filtering/regex/RegexURLNormalizer.java) uses a [configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/default-regex-normalizers.xml) containing regular expressions and replacements to normalize URLs.
-
