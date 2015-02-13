@@ -5,7 +5,8 @@ TBD
 
 ## Components
 * [[Protocols]]: Network protocols that are usable in storm-crawler
-* [[SiteMapParserBolt]]: how we handle sitemaps 
+* [[SiteMapParserBolt]]: how to handle sitemaps
+* [[URLFilters]]
 
 ## Resources
 
