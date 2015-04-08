@@ -1,3 +1,3 @@
 The [JSoupParserBolt](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/bolt/JSoupParserBolt.java) can be used instead of the Tika-based ParserBolt to parse HTML documents and extract the outlinks, text and metadata it contains.
 
-This parser calls the URLFilters and ParseFilters defined in the configuration. Please note that it calls MetadataTransfer prior to calling the ParseFilters, if you create new Outlinks in your ParseFilters you'll need to make sure that you use MetadataTransfer there to inherit the Metadata from the parent document.
+This parser calls the [[URLFilters]] and ParseFilters defined in the configuration. Please note that it calls MetadataTransfer prior to calling the ParseFilters, if you create new Outlinks in your ParseFilters you'll need to make sure that you use MetadataTransfer there to inherit the Metadata from the parent document.
