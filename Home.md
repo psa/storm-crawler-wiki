@@ -7,7 +7,7 @@ TBD
 * [[Protocols]]: Network protocols that are usable in storm-crawler
 * [[SiteMapParserBolt]]: how to handle sitemaps
 * [[JSoupParserBolt]]: parse HTML documents
-* [[URLFilters]]
+* [[URLFilters]]: how to filter or normalise outlinks
 
 ## Resources
 
