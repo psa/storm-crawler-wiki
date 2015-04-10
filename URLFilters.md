@@ -22,7 +22,33 @@ The [BasicURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/
 The [HostURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/filtering/host/HostURLFilter.java) filters URLs based on whether they belong to the same host or domain name as the source URL. This is configured with the parameter `ignoreOutsideDomain` and `ignoreOutsideHost`. The latter takes precedence over the former.
 
 **RegexURLFilter**
-The [RegexURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/filtering/regex/RegexURLFilter.java) uses a [configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/default-regex-filters.txt) containing regular expressions to determine whether a URL should be kept or not.
+The [RegexURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/filtering/regex/RegexURLFilter.java) uses a [configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/default-regex-filters.txt) or a JSON ArrayNode containing regular expressions to determine whether a URL should be kept or not.
+<br/>
+RegexURLFilter config sample in JSON format:<br/>
+```
+{
+    "urlFilters": [
+        "-^(file|ftp|mailto):",
+        "+."
+    ]
+}
+```
 
 **RegexURLNormalizer**
-The [RegexURLNormalizer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/filtering/regex/RegexURLNormalizer.java) uses a [configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/default-regex-normalizers.xml) containing regular expressions and replacements to normalize URLs.
+The [RegexURLNormalizer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/filtering/regex/RegexURLNormalizer.java) uses a [configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/default-regex-normalizers.xml) or a JSON ArrayNode containing regular expressions and replacements to normalize URLs.
+<br/>
+RegexURLNormalizer config sample in JSON format:<br/>
+```
+{
+    "urlNormalizers": [
+        {
+            "pattern": "#.*?(\\?|&amp;|$)",
+            "substitution": "$1"
+        },
+        {
+            "pattern": "\\?&amp;",
+            "substitution": "\\?"
+        }
+    ]
+}
+```
