@@ -8,6 +8,7 @@ TBD
 * [[SiteMapParserBolt]]: how to handle sitemaps
 * [[JSoupParserBolt]]: parse HTML documents
 * [[URLFilters]]: how to filter or normalise outlinks
+* [[Configuration]]: how to configure the storm-crawler
 
 ## Resources
 * [Presentations](https://github.com/DigitalPebble/storm-crawler/wiki/Presentations)
