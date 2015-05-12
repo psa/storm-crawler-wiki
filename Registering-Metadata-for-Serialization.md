@@ -1,5 +1,5 @@
-###Registering Metadata for Kyro Serialization
-If your Storm-Crawler topology doesn't extend `com.digitalpebble.storm.crawler.ConfigurableTopology`, you will need to manually register Storm-Crawler's `Metadata` class for serialization in Storm. For more information on Kyro serialization in Apache Storm, you can refer to the [documentation](https://storm.apache.org/documentation/Serialization.html).
+###Registering Metadata for Kryo Serialization
+If your Storm-Crawler topology doesn't extend `com.digitalpebble.storm.crawler.ConfigurableTopology`, you will need to manually register Storm-Crawler's `Metadata` class for serialization in Storm. For more information on Kryo serialization in Apache Storm, you can refer to the [documentation](https://storm.apache.org/documentation/Serialization.html).
 
 To register `Metadata` for serialization, you'll need to import `backtype.storm.Config` and `com.digitalpebble.storm.crawler.Metadata`. Then, in your topology class, you'll register the class with:
 
