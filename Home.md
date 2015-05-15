@@ -6,6 +6,7 @@
 * [[Registering Metadata for Serialization]]: If your topology doesn't extend `ConfigurableTopology`, you will need to manually register storm-crawler's `Metadata` class for serialization in Storm.
 
 ## Components
+* [[FetcherBolt(s)]]
 * [[Protocols]]: Network protocols that are usable in storm-crawler
 * [[SiteMapParserBolt]]: how to handle sitemaps
 * [[JSoupParserBolt]]: parse HTML documents
