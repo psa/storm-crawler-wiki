@@ -11,6 +11,7 @@
 * [[JSoupParserBolt]]: parse HTML documents
 * [[SiteMapParserBolt]]: how to handle sitemaps
 * [[URLFilters]]: how to filter or normalise outlinks
+* [[ParseFilters]]: extract metadata from documents
 
 ## Resources
 * [Presentations](https://github.com/DigitalPebble/storm-crawler/wiki/Presentations)
