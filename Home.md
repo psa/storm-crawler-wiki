@@ -8,8 +8,8 @@
 ## Components
 * [[FetcherBolt(s)]]
 * [[Protocols]]: Network protocols that are usable in storm-crawler
-* [[SiteMapParserBolt]]: how to handle sitemaps
 * [[JSoupParserBolt]]: parse HTML documents
+* [[SiteMapParserBolt]]: how to handle sitemaps
 * [[URLFilters]]: how to filter or normalise outlinks
 
 ## Resources
