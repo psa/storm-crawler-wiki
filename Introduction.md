@@ -12,3 +12,4 @@ Apart from the core components, we also provide some [external resources](https:
 
 **Storm-crawler** is perfectly suited to use cases where the URL to fetch and parse come as streams but is also a good solution for large scale recursive crawls, particularly where low latency is required. The project is used in production by [various companies](https://github.com/DigitalPebble/storm-crawler/wiki/Powered-By) and is actively developed and maintained.
 
+The [[Presentations]] page contains links to some recent presentations made about this project.
