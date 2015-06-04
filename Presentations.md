@@ -1,4 +1,4 @@
-* _**Low latency scalable web crawling on Apache Storm**_  \[[slides](http://www.slideshare.net/digitalpebble/j-nioche-berlinbuzzwords20150601) - [video](https://www.youtube.com/watch?v=c8sqVkeFg2c&index=7&list=PLq-odUc2x7i-_qWWixXHZ6w-MxyLxEC7s)\] by Julien Nioche. BerlinBuzzwords 2015
+* _**Low latency scalable web crawling on Apache Storm**_  \[[slides](http://www.slideshare.net/digitalpebble/j-nioche-berlinbuzzwords20150601) - [video](https://t.co/A3bRKroDn3)\] by Julien Nioche. BerlinBuzzwords 2015
 
 * _**Storm Crawler A real-time distributed web crawling and monitoring framework**_ \[[slides](http://www.slideshare.net/ontopic/storm-crawler-apacheconna2015)\] by Jake Dodd - [Ontopic](http://www.ontopic.io/). ApacheCon North America 2015
 
