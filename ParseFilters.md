@@ -4,13 +4,13 @@ ParseFilters need to implement the interface [ParseFilter](https://github.com/Di
 
 ```
 public void filter(String URL, byte[] content, DocumentFragment doc,
-            Metadata metadata, List<Outlink> outlinks);
+            ParseResult parse);
 
 public void configure(Map stormConf, JsonNode filterParams);
 
 public boolean needsDOM();
 ```
-The `filter` method is where the extraction takes place.
+The `filter` method is where the extraction takes place. [ParseResult](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/ParseResult.java) objects contain the outlinks extracted from the document as well as a Map of String [ParseData](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/ParseData.java) where the String is the URL of a subdocument obtained from the main one (or the main one itself). The ParseData objects contain Metadata, binary content and text for the subdocuments. This is useful for indexing subdocuments independently from the main document. 
 
 The `needsDOM` method simply indicates whether a given ParseFilter instance needs the DOM structure. If no ParseFilters need it, the parsing bolt will not generate the DOM which can slightly improve the performance.
 
