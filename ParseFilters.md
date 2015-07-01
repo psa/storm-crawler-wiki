@@ -28,5 +28,7 @@ The [XPathFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/cor
 **DebugParseFilter**
 The [DebugParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/filter/DebugParseFilter.java) dumps a XML representation of the DOM structure to a temporary file.
 
+**ContentFilter**
+The [ContentFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/filter/ContentFilter.java) allows to restrict the text of a document to the text covered by a Xpath expression.
 
 
