@@ -1,7 +1,9 @@
 This document describes all confguration paramaters that infleuence the behaviour of the crawler and all its components.
 
 # Main configuration
-The main configuration file of the storm-crawler is expected to be in YAML format and can be passed as a command-line argument as `-conf <path_to_your_config>` to the Java call of your Main class (which normally would be a sub-class of [ConfigurableTopology](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/ConfigurableTopology.java)).
+The main configuration file of the storm-crawler is expected to be in YAML format and can be passed as a command-line argument as `-conf <path_to_config_file>` to the Java call of your Main class (which normally would be a sub-class of [ConfigurableTopology](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/ConfigurableTopology.java)).
+
+You can use `-conf <path_to_config_file>` more than once on the command line, which allows to separate the configuration files for instance between the generic configuration and the configuration of a specific resources. 
 
 In local mode if you want to use Maven to compile & run the out-of-the-box sample `CrawlTopology` this is achived by the following Maven call:
 ```bash
