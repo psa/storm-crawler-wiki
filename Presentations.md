@@ -1,3 +1,5 @@
+* _**DigitalPebble's Blog : what's new in Storm-Crawler 0.6**_ (http://digitalpebble.blogspot.co.uk/2015/09/whats-new-in-storm-crawler-06.html)
+
 * _**DigitalPebble's Blog : what's new in Storm-Crawler 0.5**_ (http://digitalpebble.blogspot.co.uk/2015/06/whats-new-in-storm-crawler-05.html)
 
 * _**Low latency scalable web crawling on Apache Storm**_  \[[slides](http://www.slideshare.net/digitalpebble/j-nioche-berlinbuzzwords20150601) - [video](https://t.co/A3bRKroDn3)\] by Julien Nioche. BerlinBuzzwords 2015
