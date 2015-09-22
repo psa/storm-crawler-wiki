@@ -60,16 +60,18 @@ If one of the keys is not present in your YAML file, the default value will be t
 
 
 ### Indexing
+
+The values below are used by sub-classes of `AbstractIndexerBolt`. Examples: [StdOut](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/indexing/StdOutIndexer.java), [ElasticSearch](https://github.com/DigitalPebble/storm-crawler/blob/master/external/elasticsearch/src/main/java/com/digitalpebble/storm/crawler/elasticsearch/bolt/IndexerBolt.java). These classes persist the outcome of your crawling process and receive tuples enriched with Metadata (with all information gathered by previous Bolts)
+
 | key                    | default value | description                            |
 |------------------------|---------------|----------------------------------------|
-| stormcrawler.indexer.class | -         | A sub-class of `AbstractIndexerBolt`. Examples: [StdOut](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/indexing/StdOutIndexer.java), [ElasticSearch](https://github.com/DigitalPebble/storm-crawler/blob/master/external/elasticsearch/src/main/java/com/digitalpebble/storm/crawler/elasticsearch/bolt/IndexerBolt.java). This class is meant to persist the outcome of your crawling process. It receives touples enriched with Metadata (with all information gathered by previous Bolts)|
 | indexer.md.filter      | -             | A YAML List of `key=value` strings that let you filter records that should be index based on Metadata of a tuple. If specified, only tuples that match the given filter are being indexed. This is just used by the helper method `AbstractIndexerBolt.filterDocument(Metadata)`. Using this method is on the responsibility of the implementing class. [Here is an example] (https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/indexing/StdOutIndexer.java#L56)|
 | indexer.md.mapping     | -             | A YAML List of `key=value` strings that let you define a mapping of   fields that occur in the Metadata of a tuple to field-names for your persistence layer. The [AbstractIndexerBolt](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/indexing/AbstractIndexerBolt.java) provides a method names `filterMetadata(Metadata)` that sub-classes should use inside their `execute()` method in order to apply this mapping to the Metadata object. [Here](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/indexing/StdOutIndexer.java#L72) is an example. |
 | indexer.text.fieldname | -             | The fieldname that should be used to index the content of HTML body. The usage of this is again in the responsibility of the class that extends `AbstractIndexerBolt`. The value of this can be accessed using the protected method `fieldNameForText()`. [Here](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/indexing/StdOutIndexer.java#L64) is an example. | 
 | indexer.url.fieldname  | -             | Same as above - `indexer.text.fieldname` just for the URL Field |
 
 ### Status persistence
-_This reffers to persisting the status of a URL (e.g. ERROR, DISCOVERED etc.) along with a something like a `nextFetchDate` that is being calculated by a [Scheduler](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/persistence/DefaultScheduler.java)_
+_This refers to persisting the status of a URL (e.g. ERROR, DISCOVERED etc.) along with a something like a `nextFetchDate` that is being calculated by a [Scheduler](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/persistence/DefaultScheduler.java)_
 
 | key                    | default value | description                            |
 |------------------------|---------------|----------------------------------------|
