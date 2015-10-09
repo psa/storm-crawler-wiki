@@ -1,3 +1,5 @@
+* _**DigitalPebble's Blog : Index the web with AWS CloudSearch**_ (http://digitalpebble.blogspot.co.uk/2015/09/index-web-with-aws-cloudsearch.html)
+
 * _**DigitalPebble's Blog : what's new in Storm-Crawler 0.6**_ (http://digitalpebble.blogspot.co.uk/2015/09/whats-new-in-storm-crawler-06.html)
 
 * _**DigitalPebble's Blog : what's new in Storm-Crawler 0.5**_ (http://digitalpebble.blogspot.co.uk/2015/06/whats-new-in-storm-crawler-05.html)
