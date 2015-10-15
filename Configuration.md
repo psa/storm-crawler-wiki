@@ -1,7 +1,12 @@
-This document describes all confguration paramaters that infleuence the behaviour of the crawler and all its components.
+This document describes all configuration parameters that determine the behaviour of the crawler and all its components.
 
-# Main configuration
-The main configuration file of the storm-crawler is expected to be in YAML format and can be passed as a command-line argument as `-conf <path_to_config_file>` to the Java call of your Main class (which normally would be a sub-class of [ConfigurableTopology](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/ConfigurableTopology.java)).
+## Default configuration
+The file [crawler-default.yaml](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/crawler-default.yaml) lists the configuration elements presented below and provides a default value for them. This file is loaded automatically by the sub-classes of [ConfigurableTopology](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/ConfigurableTopology.java) and should not be modified. Instead we recommend that you provide a custom configuration file when launching a topology (see below).
+
+## Custom configuration
+The custom configuration file is expected to be in YAML format and can be passed as a command-line argument as `-conf <path_to_config_file>` to the Java call of your Main class (which normally would be a sub-class of [ConfigurableTopology](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/ConfigurableTopology.java)).
+
+The values in the custom configuration file will override the ones provided in crawler-default.yaml and it does not need to contain all the values.
 
 You can use `-conf <path_to_config_file>` more than once on the command line, which allows to separate the configuration files for instance between the generic configuration and the configuration of a specific resources. 
 
