@@ -8,6 +8,15 @@ Config.registerSerialization(conf, Metadata.class);
 ```
 where `conf` is your Storm configuration for the topology.
 
+Alternatively you can specify 
+
+```yaml
+  topology.kryo.register:
+    - com.digitalpebble.storm.crawler.Metadata
+```
+
+in the configuration file.
+
 Because Storm topology main classes can take many forms, we've provided a more complete example below (based on storm-starter's [ExclamationTopology](https://github.com/apache/storm/blob/847958cad438766cb7f39ce649fe7a3506b61b3a/examples/storm-starter/src/jvm/storm/starter/ExclamationTopology.java).
 
 ```java
