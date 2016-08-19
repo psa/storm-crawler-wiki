@@ -10,7 +10,7 @@ The values in the custom configuration file will override the ones provided in c
 
 You can use `-conf <path_to_config_file>` more than once on the command line, which allows to separate the configuration files for instance between the generic configuration and the configuration of a specific resources. 
 
-In local mode if you want to use Maven to compile & run the out-of-the-box sample `CrawlTopology` this is achived by the following Maven call:
+In local mode if you want to use Maven to compile & run the out-of-the-box sample `CrawlTopology` this is achieved by the following Maven call:
 ```bash
 cd core
 mvn clean compile exec:java -Dstorm.topology=com.digitalpebble.storm.crawler.CrawlTopology -Dexec.args="-conf crawler-conf.yaml -local"
@@ -45,8 +45,8 @@ If one of the keys is not present in your YAML file, the default value will be t
 | http.skip.robots       | `false`       | Generally ignore all robots.txt rules (not recommended) |
 | http.proxy.host        | -             | A SOCKS HTTP proxy server to be used for all requests made by the crawler |
 | http.proxy.port        | -             | The port of your SOCKS proxy server |
-| http.timeout           | `10000`       | A connection timeout specified in miliseconds. Tuples that run into this timeout will be emitted with the status ERROR in the [StatusStream](https://github.com/DigitalPebble/storm-crawler/wiki/statusStream) |
-| http.robots.agents     | `''`          | Comma seperated additional user-agent strings to be used for the interpretation of the robots.txt. If left empty (default) than the robots.txt is interpreted with the value of `http.agent.name`|
+| http.timeout           | `10000`       | A connection timeout specified in milliseconds. Tuples that run into this timeout will be emitted with the status ERROR in the [StatusStream](https://github.com/DigitalPebble/storm-crawler/wiki/statusStream) |
+| http.robots.agents     | `''`          | Comma separated additional user-agent strings to be used for the interpretation of the robots.txt. If left empty (default) than the robots.txt is interpreted with the value of `http.agent.name`|
 | http.content.limit     | `65536`       | *not yet implemented* - The maximum number of bytes for returned HTTP response bodies|
 | partition.url.mode     | `byHost`      | Possible values are: `byHost`, `byDomain`, `byIP`. Defines how URLs are partitioned and by that routed to the FetcherBolt. For example `byIP` would lead to all tuples with a URL that is served by the same IP address to be always (for the lifetime of your topology) fetched by the same Storm task. This partitioning is important because it makes things like e.g. caching a robots.txt file for a specific domain very efficient. The value you specify here is being used to make use of Storms Field Grouping.|
 | fetcher.queue.mode     | `byHost`      | _???_ Possible values are: `byHost`, `byDomain`, `byIP`. This parameter influences how FetchQueues are grouped inside the FetcherBolt. This influences the overall thread count and things like crawl delays (see below)|
@@ -59,8 +59,8 @@ If one of the keys is not present in your YAML file, the default value will be t
 | redirections.allowed   | `true`        | If URL redirects are allowed or not. If set to true, the crawler will emit the targeted URL in the [StatusStream](https://github.com/DigitalPebble/storm-crawler/wiki/statusStream) with the status DISCOVERED |
 | http.robots.403.allow  | `true`        | _???_ Defines what happens in the scenario where the request to the `robots.txt` file is being responded with a HTTP 403 (Forbidden). When set to `true` this means that the crawler would not be limited at all and freely crawl all pages of the domain. If set to `false` this means that the crawler would not fetch any of the pages for this domain. |
 | protocols              | `http,https`  | The protocols to support. Each of them has a corresponding `<proto>.protocol.implementation` directive. Don't touch this unless you are implementing additional protocols to be supported. |
-| http.protocol.implementation | `com.digitalpebble. storm.crawler.protocol. httpclient.HttpProtocol` | The [Protocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/protocol/Protocol.java) impementation for plain HTTP |
-| https.protocol.implementation | `com.digitalpebble. storm.crawler.protocol. httpclient.HttpProtocol` | The [Protocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/protocol/Protocol.java) impementation for HTTP over SSL | 
+| http.protocol.implementation | `com.digitalpebble. storm.crawler.protocol. httpclient.HttpProtocol` | The [Protocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/protocol/Protocol.java) implementation for plain HTTP |
+| https.protocol.implementation | `com.digitalpebble. storm.crawler.protocol. httpclient.HttpProtocol` | The [Protocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/protocol/Protocol.java) implementation for HTTP over SSL | 
 
 
 
@@ -90,11 +90,11 @@ _This refers to persisting the status of a URL (e.g. ERROR, DISCOVERED etc.) alo
 ### Parsing
 | key                    | default value | description                            |
 |------------------------|---------------|----------------------------------------|
-| parser.emitOutlinks    | `true`        |  Whether or not to emit outgoing links found in the parsed HTML document to the [StatusStrean](https://github.com/DigitalPebble/storm-crawler/wiki/statusStream) as `DISCOVERED`. Your [URL Filters](https://github.com/DigitalPebble/storm-crawler/wiki/URLFilters) are applied to outgoing links before they are emitted. This option being `true` is crucial if you are building a resurcive crawler. |
+| parser.emitOutlinks    | `true`        |  Whether or not to emit outgoing links found in the parsed HTML document to the [StatusStrean](https://github.com/DigitalPebble/storm-crawler/wiki/statusStream) as `DISCOVERED`. Your [URL Filters](https://github.com/DigitalPebble/storm-crawler/wiki/URLFilters) are applied to outgoing links before they are emitted. This option being `true` is crucial if you are building a recursive crawler. |
 | track.anchors          | `true`        | Whether or not to add the anchor text (can be > 1) of (filtered) outgoing links with the key `anchors` to the Metadata of a tuple. 
 
 ### Metadata
 | key                    | default value | description                            |
 |------------------------|---------------|----------------------------------------|
-| metadata.track.path    | `true`        | Whether or not to track the URL path of outgoing links (all URLs that the crawler crawled to find this link) in the Metadata. The Metadata fieldname for this is `url.path`. It's a list of URLs that represent the crawl path (how did the crawler find this page). |
-| metadata.track.depth   | `true`        | Whether or not to track the depth of a crawled URL. This is a simple counter that is being tracked for outgoing links in the Metadata and incremented by `1` for every page that was crawled to find a specific link. This can be useful to let your Spout decide/sort which URLs to emit based on their depth. You could use this to influence the behavior of your recursive crawl (e.g. preffer pages with a low `depth` count).|
+| metadata.track.path    | `true`        | Whether or not to track the URL path of outgoing links (all URLs that the crawler crawled to find this link) in the Metadata. The Metadata field name for this is `url.path`. It's a list of URLs that represent the crawl path (how did the crawler find this page). |
+| metadata.track.depth   | `true`        | Whether or not to track the depth of a crawled URL. This is a simple counter that is being tracked for outgoing links in the Metadata and incremented by `1` for every page that was crawled to find a specific link. This can be useful to let your Spout decide/sort which URLs to emit based on their depth. You could use this to influence the behavior of your recursive crawl (e.g. prefer pages with a low `depth` count).|
