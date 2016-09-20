@@ -12,6 +12,7 @@
 * [[SiteMapParserBolt]]: how to handle sitemaps
 * [[URLFilters]]: how to filter or normalise outlinks
 * [[ParseFilters]]: extract metadata from documents
+* [[IndexingBolts]]
 
 ## Resources
 * [Presentations](https://github.com/DigitalPebble/storm-crawler/wiki/Presentations)
