@@ -1,6 +1,6 @@
 **ParseFilters** are called from parsing bolts such as  [JSoupParserBolt](https://github.com/DigitalPebble/storm-crawler/wiki/JSoupParserBolt) and [SiteMapParserBolt](https://github.com/DigitalPebble/storm-crawler/wiki/SiteMapParserBolt) to extract data from web pages. The data extracted are stored in the Metadata object. ParseFilters can also modify the **Outlinks** and in that sense act as [[URLFilters]].
 
-ParseFilters need to implement the interface [ParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/ParseFilter.java) which has three methods :
+ParseFilters need to implement the interface [ParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/ParseFilter.java) which has three methods :
 
 ```
 public void filter(String URL, byte[] content, DocumentFragment doc,
@@ -10,7 +10,7 @@ public void configure(Map stormConf, JsonNode filterParams);
 
 public boolean needsDOM();
 ```
-The `filter` method is where the extraction takes place. [ParseResult](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/ParseResult.java) objects contain the outlinks extracted from the document as well as a Map of String [ParseData](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/ParseData.java) where the String is the URL of a subdocument obtained from the main one (or the main one itself). The ParseData objects contain Metadata, binary content and text for the subdocuments. This is useful for indexing subdocuments independently from the main document. 
+The `filter` method is where the extraction takes place. [ParseResult](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/ParseResult.java) objects contain the outlinks extracted from the document as well as a Map of String [ParseData](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/ParseData.java) where the String is the URL of a subdocument obtained from the main one (or the main one itself). The ParseData objects contain Metadata, binary content and text for the subdocuments. This is useful for indexing subdocuments independently from the main document. 
 
 The `needsDOM` method simply indicates whether a given ParseFilter instance needs the DOM structure. If no ParseFilters need it, the parsing bolt will not generate the DOM which can slightly improve the performance.
 
@@ -23,13 +23,13 @@ The JSON configuration allows to load several instances of the same filtering cl
 The following ParseFilters are provided as part of the core code.
 
 **XPathFilter**
-The [XPathFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/filter/XPathFilter.java) allows to define XPath expressions to extract data from the page and store them in the Metadata object. 
+The [XPathFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/XPathFilter.java) allows to define XPath expressions to extract data from the page and store them in the Metadata object. 
 
 **DebugParseFilter**
-The [DebugParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/filter/DebugParseFilter.java) dumps a XML representation of the DOM structure to a temporary file.
+The [DebugParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/DebugParseFilter.java) dumps a XML representation of the DOM structure to a temporary file.
 
 **ContentFilter**
-The [ContentFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/filter/ContentFilter.java) allows to restrict the text of a document to the text covered by a Xpath expression.
+The [ContentFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/ContentFilter.java) allows to restrict the text of a document to the text covered by a Xpath expression.
 
 **LinkParseFilter**
-The [LinkParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/filter/LinkParseFilter.java) can be used to extract outlinks from documents using Xpath expressions defined in the config.
+The [LinkParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/LinkParseFilter.java) can be used to extract outlinks from documents using Xpath expressions defined in the config.

@@ -1,4 +1,4 @@
-The class [MetadataTransfer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/util/MetadataTransfer.java) is  an important part of the framework and is used in key parts of a pipeline.
+The class [MetadataTransfer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/util/MetadataTransfer.java) is  an important part of the framework and is used in key parts of a pipeline.
 
 * Fetching
 * Parsing
@@ -12,9 +12,9 @@ A **MetadataTransfer** instance has mainly two methods, both returning Metadata 
             Metadata parentMD)`
 *  `filter(Metadata metadata)`  
 
-The former is used when creating [Outlinks](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/parse/Outlink.java) i.e. in the parsing bolts but also for handling redirections in the [[FetcherBolt(s)]].
+The former is used when creating [Outlinks](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/Outlink.java) i.e. in the parsing bolts but also for handling redirections in the [[FetcherBolt(s)]].
 
-The latter is used by extensions of the [AbstractStatusUpdaterBolt](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/storm/crawler/persistence/AbstractStatusUpdaterBolt.java) class to determine which **Metadata** should be persisted.
+The latter is used by extensions of the [AbstractStatusUpdaterBolt](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/persistence/AbstractStatusUpdaterBolt.java) class to determine which **Metadata** should be persisted.
 
 The behaviour of the default MetadataTransfer class is driven by configuration only. It has the following options. 
 
