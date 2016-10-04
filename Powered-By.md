@@ -8,3 +8,4 @@ Drop me a line at stormcrawler@digitalpebble.com if you want to be added to this
 * [Ontopic](http://www.ontopic.io/)
 * [ShopStyle](http://www.shopstyle.com/)
 * [Wombat Software](http://www.wombatsoftware.de/)
+* [CommonCrawl](http://commoncrawl.org/2016/10/news-dataset-available/)
