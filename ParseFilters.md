@@ -33,3 +33,10 @@ The [ContentFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/c
 
 **LinkParseFilter**
 The [LinkParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/LinkParseFilter.java) can be used to extract outlinks from documents using Xpath expressions defined in the config.
+
+**DomainParseFilter**
+The [DomainParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/DomainParseFilter.java) stores the domain or host name in the metadata for indexing later on.
+
+**MD5SignatureParseFilter**
+The [MD5SignatureParseFilter](
+https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/MD5SignatureParseFilter.java) generates a MD5 signature of a document based on the binary content, text or URL (as a last resort). Can be used in combination with the *ContentFilter* above so that the text used for the signature excludes any boilerplate.
