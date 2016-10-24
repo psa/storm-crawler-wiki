@@ -16,7 +16,9 @@ The JSON configuration allows to load several instances of the same filtering cl
 The following URL filters are provided as part of the core code.
 
 **Basic**
-The [BasicURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/basic/BasicURLNormalizer.java) removes the anchor part of URLs based on the value of the parameter `removeAnchorPart`.
+The [BasicURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/basic/BasicURLFilter.java) filters based on the length of the URL and the repetition of path elements. 
+
+The [BasicURLNormalizer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/basic/BasicURLNormalizer.java) removes the anchor part of URLs based on the value of the parameter `removeAnchorPart`. It also removed query elements based on the configuration and whether their value corresponds to a 32-bit hash.
 
 **MaxDepth**
 The [MaxDepthFilter]https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/depth/MaxDepthFilter.java) is configured with the parameter `max Depth` and requires `metadata.track.depth` to be set to true in the [[Configuration]]. This removes outlinks found too far from the seed URL and is a way of controling the expansion of the crawl.
