@@ -15,6 +15,12 @@
 
 ## Release overviews
 
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.2]
+(http://digitalpebble.blogspot.co.uk/2016/10/whats-new-in-stormcrawler-12.html)**_
+
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.1]
+(http://digitalpebble.blogspot.co.uk/2016/09/whats-new-in-stormcrawler-11.html)**_
+
 * _**DigitalPebble's Blog : 1.0 [StormCrawler : the Coming of Age](http://digitalpebble.blogspot.co.uk/2016/07/stormcrawler-coming-of-age.html)**_ 
 
 * _**DigitalPebble's Blog : what's new in [Storm-Crawler 0.10](http://digitalpebble.blogspot.co.uk/2016/06/whats-new-in-stormcrawler-010.html)**_ 
