@@ -16,10 +16,10 @@ The former is used when creating [Outlinks](https://github.com/DigitalPebble/sto
 
 The latter is used by extensions of the [AbstractStatusUpdaterBolt](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/persistence/AbstractStatusUpdaterBolt.java) class to determine which **Metadata** should be persisted.
 
-The behaviour of the default MetadataTransfer class is driven by configuration only. It has the following options. 
+The behavior of the default MetadataTransfer class is driven by configuration only. It has the following options. 
 
-* `metadata.transfer` list of metadata key values to filter or transfer to the outlinks. See [https://github.com/DigitalPebble/storm-crawler/blob/master/core/crawler-conf.yaml#L11]
-* `metadata.track.path` whether to track the url path or not. Boolean value, true by default.
+* `metadata.transfer` list of metadata key values to filter or transfer to the outlinks. See [crawler-default.yaml](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/crawler-default.yaml#L23)
+* `metadata.track.path` whether to track the URL path or not. Boolean value, true by default.
 * `metadata.track.depth` whether to track the depth from seed. Boolean value, true by default.
 
 Note that the method `getMetaForOutlink` calls `filter` to determine what to key values to keep.
