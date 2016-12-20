@@ -21,7 +21,7 @@ The [BasicURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/
 The [BasicURLNormalizer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/basic/BasicURLNormalizer.java) removes the anchor part of URLs based on the value of the parameter `removeAnchorPart`. It also removed query elements based on the configuration and whether their value corresponds to a 32-bit hash.
 
 **MaxDepth**
-The [MaxDepthFilter]https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/depth/MaxDepthFilter.java) is configured with the parameter `max Depth` and requires `metadata.track.depth` to be set to true in the [[Configuration]]. This removes outlinks found too far from the seed URL and is a way of controling the expansion of the crawl.
+The [MaxDepthFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/depth/MaxDepthFilter.java) is configured with the parameter `max Depth` and requires `metadata.track.depth` to be set to true in the [[Configuration]]. This removes outlinks found too far from the seed URL and is a way of controling the expansion of the crawl.
 
 **Host**
 The [HostURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/host/HostURLFilter.java) filters URLs based on whether they belong to the same host or domain name as the source URL. This is configured with the parameter `ignoreOutsideDomain` and `ignoreOutsideHost`. The latter takes precedence over the former.
