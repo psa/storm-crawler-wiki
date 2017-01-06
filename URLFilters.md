@@ -23,6 +23,10 @@ The [BasicURLNormalizer](https://github.com/DigitalPebble/storm-crawler/blob/mas
 **MaxDepth**
 The [MaxDepthFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/depth/MaxDepthFilter.java) is configured with the parameter `max Depth` and requires `metadata.track.depth` to be set to true in the [[Configuration]]. This removes outlinks found too far from the seed URL and is a way of controling the expansion of the crawl.
 
+If the filter is configured with a value of 0, then all outlinks will be removed, regardless of whether the depth is being tracked.
+
+The max depth can also be set on a per seed basis, using the key/value `max.depth`, which is automatically transfered to the outlinks if `metadata.track.depth` is set to true.
+
 **Host**
 The [HostURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/host/HostURLFilter.java) filters URLs based on whether they belong to the same host or domain name as the source URL. This is configured with the parameter `ignoreOutsideDomain` and `ignoreOutsideHost`. The latter takes precedence over the former.
 
