@@ -10,20 +10,24 @@ The values in the custom configuration file will override the ones provided in c
 
 You can use `-conf <path_to_config_file>` more than once on the command line, which allows to separate the configuration files for instance between the generic configuration and the configuration of a specific resources. 
 
-In local mode if you want to use Maven to compile & run the out-of-the-box sample `CrawlTopology` this is achieved by the following Maven call:
-```bash
-cd core
-mvn clean compile exec:java -Dstorm.topology=com.digitalpebble.storm.crawler.CrawlTopology -Dexec.args="-conf crawler-conf.yaml -local"
+With Maven installed, you must first generate an uberjar:
+
+``` sh
+mvn clean package
 ```
-While deploying on a production Storm cluster this would look something like this:
+
+before submitting the topology using the storm command:
+
 ```bash
-storm jar path/to/allmycode.jar org.me.MyCrawlTopology -conf my-crawler-conf.yaml
+storm jar path/to/allmycode.jar org.me.MyCrawlTopology -conf my-crawler-conf.yaml -local"
 ```
-Passing this parameter is **mandatory**.
-A sample configuration file can be found [here](https://github.com/DigitalPebble/storm-crawler/blob/master/core/crawler-conf.yaml).
+While deploying on a production Storm cluster, simply remove the `local` parameter.
+
+Passing a configuration file is **mandatory**.
+A sample configuration file can be found [here](https://github.com/DigitalPebble/storm-crawler/blob/master/archetype/src/main/resources/archetype-resources/crawler-conf.yaml).
 
 ## Configuration options
-The following tables describes all available configuration options and their default values.
+The following tables describe all available configuration options and their default values.
 If one of the keys is not present in your YAML file, the default value will be taken.
 
 ### General options
