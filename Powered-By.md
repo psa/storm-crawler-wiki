@@ -1,6 +1,6 @@
 **Companies & Projects Using Storm-Crawler**
 
-Drop me a line at stormcrawler@digitalpebble.com if you want to be added to this page.
+Drop us a line at stormcrawler@digitalpebble.com if you want to be added to this page.
 
 * [CareerBuilder](http://www.careerbuilder.com/)
 * [StolenCameraFinder](http://www.stolencamerafinder.com/)
@@ -10,3 +10,5 @@ Drop me a line at stormcrawler@digitalpebble.com if you want to be added to this
 * [Wombat Software](http://www.wombatsoftware.de/)
 * [CommonCrawl](http://commoncrawl.org/2016/10/news-dataset-available/)
 * [WebFinery](https://webfinery.com/)
+* [ReportLinker](http://www.reportlinker.com/)
+
