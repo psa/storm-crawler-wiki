@@ -19,6 +19,7 @@ The latter is used by extensions of the [AbstractStatusUpdaterBolt](https://gith
 The behavior of the default MetadataTransfer class is driven by configuration only. It has the following options. 
 
 * `metadata.transfer` list of metadata key values to filter or transfer to the outlinks. See [crawler-default.yaml](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/crawler-default.yaml#L23)
+* `metadata.persist` list of metadata key values to persist in the status storage. See [crawler-default.yaml](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/crawler-default.yaml#L28)
 * `metadata.track.path` whether to track the URL path or not. Boolean value, true by default.
 * `metadata.track.depth` whether to track the depth from seed. Boolean value, true by default.
 
