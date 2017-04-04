@@ -1,11 +1,13 @@
 ## Talks, tutorials and interviews
 
+* _**Tutorial: StormCrawler + Elasticsearch + Kibana**_ (http://digitalpebble.blogspot.co.uk/2017/04/video-tutorial-stormcrawler.html)
+
 * _**Q&A with InfoQ**_ (https://www.infoq.com/news/2016/12/nioche-stormcrawler-web-crawler)
 
-* _**DigitalPebble's Blog :  Index the web with StormCrawler (revisited)**_
+* _**DigitalPebble's Blog:  Index the web with StormCrawler (revisited)**_
 (http://digitalpebble.blogspot.co.uk/2016/09/index-web-with-stormcrawler-revisited.html)
 
-* _**DigitalPebble's Blog : Index the web with AWS CloudSearch**_ (http://digitalpebble.blogspot.co.uk/2015/09/index-web-with-aws-cloudsearch.html)
+* _**DigitalPebble's Blog: Index the web with AWS CloudSearch**_ (http://digitalpebble.blogspot.co.uk/2015/09/index-web-with-aws-cloudsearch.html)
 
 * _**Low latency scalable web crawling on Apache Storm**_  \[[slides](http://www.slideshare.net/digitalpebble/j-nioche-berlinbuzzwords20150601) - [video](https://t.co/A3bRKroDn3)\] by Julien Nioche. BerlinBuzzwords 2015
 
