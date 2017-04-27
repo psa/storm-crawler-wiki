@@ -1,5 +1,7 @@
 ## Talks, tutorials and interviews
 
+*  _**DigitalPebble's Blog: Crawl dynamic content with Selenium and StormCrawler**_ (http://digitalpebble.blogspot.co.uk/2017/04/crawl-dynamic-content-with-selenium-and.html)
+
 * _**Tutorial: StormCrawler + Elasticsearch + Kibana**_ (http://digitalpebble.blogspot.co.uk/2017/04/video-tutorial-stormcrawler.html)
 
 * _**Q&A with InfoQ**_ (https://www.infoq.com/news/2016/12/nioche-stormcrawler-web-crawler)
