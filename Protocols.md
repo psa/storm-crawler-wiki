@@ -20,6 +20,6 @@ See [[HTTPProtocol]] for the effect of metadata content on protocol behaviour.
 | interruptible / trimmable [#463](https://github.com/DigitalPebble/storm-crawler/issues/463)|    N / Y       |   Y / Y    |    Y / N      |
 | cookies                   |     Y       |   N     |    N      |
 | HEAD method [#485](https://github.com/DigitalPebble/storm-crawler/issues/485)|     Y       |   N     |    N      |
-| verbatim response header [#317](https://github.com/DigitalPebble/storm-crawler/issues/317)|     Y       |   N     |    N      |
-| verbatim request header [#317](https://github.com/DigitalPebble/storm-crawler/issues/317)|     N       |   N     |    N      |
+| verbatim response header |     Y  [#317](https://github.com/DigitalPebble/storm-crawler/issues/317)     |   N [#506](https://github.com/DigitalPebble/storm-crawler/issues/506)    |    N      |
+| verbatim request header |     N  [#317](https://github.com/DigitalPebble/storm-crawler/issues/317)     |   N [#506](https://github.com/DigitalPebble/storm-crawler/issues/506)    |    N      |
 | navigation and javascript | N | N | Y |
