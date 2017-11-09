@@ -13,4 +13,4 @@ Drop us a line at stormcrawler@digitalpebble.com if you want to be added to this
 * [ReportLinker](http://www.reportlinker.com/)
 * [TokenMill](http://www.tokenmill.lt/)
 * [Polecat](http://www.polecat.com/)
-
+* [WizeNoze](http://www.wizenoze.com/en/)
