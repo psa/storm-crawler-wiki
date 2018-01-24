@@ -1,6 +1,4 @@
-**Companies & Projects Using Storm-Crawler**
-
-Drop us a line at stormcrawler@digitalpebble.com if you want to be added to this page.
+**Companies & Projects Using StormCrawler**
 
 * [CareerBuilder](http://www.careerbuilder.com/)
 * [StolenCameraFinder](http://www.stolencamerafinder.com/)
@@ -15,3 +13,5 @@ Drop us a line at stormcrawler@digitalpebble.com if you want to be added to this
 * [Polecat](http://www.polecat.com/)
 * [WizeNoze](http://www.wizenoze.com/en/)
 * [IProduct.io](http://iproduct.io/)
+
+Drop us a line at stormcrawler@digitalpebble.com if you want to be added to this page.
