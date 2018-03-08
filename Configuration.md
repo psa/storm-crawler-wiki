@@ -64,8 +64,8 @@ If one of the keys is not present in your YAML file, the default value will be t
 | redirections.allowed   | `true`        | If URL redirects are allowed or not. If set to true, the crawler will emit the targeted URL in the [StatusStream](https://github.com/DigitalPebble/storm-crawler/wiki/statusStream) with the status DISCOVERED |
 | http.robots.403.allow  | `true`        | _???_ Defines what happens in the scenario where the request to the `robots.txt` file is being responded with a HTTP 403 (Forbidden). When set to `true` this means that the crawler would not be limited at all and freely crawl all pages of the domain. If set to `false` this means that the crawler would not fetch any of the pages for this domain. |
 | protocols              | `http,https`  | The protocols to support. Each of them has a corresponding `<proto>.protocol.implementation` directive. Don't touch this unless you are implementing additional protocols to be supported. |
-| http.protocol.implementation | `com.digitalpebble. storm.crawler.protocol. httpclient.HttpProtocol` | The [Protocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/protocol/Protocol.java) implementation for plain HTTP |
-| https.protocol.implementation | `com.digitalpebble. storm.crawler.protocol. httpclient.HttpProtocol` | The [Protocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/protocol/Protocol.java) implementation for HTTP over SSL | 
+| http.protocol.implementation | `com.digitalpebble.stormcrawler.protocol. httpclient.HttpProtocol` | The [Protocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/protocol/Protocol.java) implementation for plain HTTP |
+| https.protocol.implementation | `com.digitalpebble.stormcrawler.protocol. httpclient.HttpProtocol` | The [Protocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/protocol/Protocol.java) implementation for HTTP over SSL | 
 
 
 
