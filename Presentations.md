@@ -20,6 +20,8 @@
 * _**StormCrawler in the wild**_ \[[slides](http://www.slideshare.net/digitalpebble/storm-crawler-ontopic20141113)\] by Jake Dodd - [Ontopic](http://www.ontopic.io/). ApacheCon Europe, Budapest, Nov 2014 
 
 ## Release overviews
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.8]
+(https://digitalpebble.blogspot.co.uk/2018/03/whats-new-in-stormcrawler-18.html)**_
 
 * _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.7]
 (http://digitalpebble.blogspot.co.uk/2017/11/whats-new-in-stormcrawler-17.html)**_
