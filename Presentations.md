@@ -1,5 +1,7 @@
 ## Talks, tutorials and interviews
 
+* **Patent-Crawler: A Web Crawler to Gather Virtual Patent Marking Information**, Etienne Orliac, l’Université de Lausanne/École Polytechnique Fédérale de Lausanne (UNIL/EPFL) \[[slides](http://www.hpcadvisorycouncil.com/events/2018/swiss-workshop/pdf/Weds11April/Orliac_PatentCrawler_Wed110418.pdf) - [video](https://youtu.be/2v6Y_3Q0vT0)\]
+
 *  _**DigitalPebble's Blog: Crawl dynamic content with Selenium and StormCrawler**_ (http://digitalpebble.blogspot.co.uk/2017/04/crawl-dynamic-content-with-selenium-and.html)
 
 * _**Tutorial: StormCrawler + Elasticsearch + Kibana**_ (http://digitalpebble.blogspot.co.uk/2017/04/video-tutorial-stormcrawler.html)
