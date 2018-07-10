@@ -45,6 +45,8 @@ If one of the keys is not present in your YAML file, the default value will be t
 | http.agent.description | -             | A description to be part of the `User-Agent` request header for requests issued by the crawler |
 | http.agent.url         | -             | A URL to be part of the `User-Agent` request header for requests issued by the crawler (e.g. your Companies Homepage) |
 | http.agent.email       | -             | An Email address to be part of the `User-Agent` request header for requests issued by the crawler |
+| http.basicauth.user       | -             | A user used for the Basic Authentication implemented in HTTPClient protocole |
+| http.basicauth.password       | -             | Password associated with the property `http.basicauth.user` for the Basic Authentication |
 | http.store.responsetime| `true`        | *not yet implemented* - whether or not to store the response time time in the Metadata |
 | http.skip.robots       | `false`       | Generally ignore all robots.txt rules (not recommended) |
 | http.proxy.host        | -             | A SOCKS HTTP proxy server to be used for all requests made by the crawler |
