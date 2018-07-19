@@ -1,11 +1,15 @@
 The URL filters can be used to both remove or modify incoming URLs (unlike Nutch where these functionalities are separated between URLFilters and URLNormalizers). This is used generally within a parsing bolt to normalise and filter outgoing URLs, but is also called within the FetcherBolt to handle redirections.
 
-URLFilters need to implement the interface [URLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/URLFilter.java) which has two methods : 
+URLFilters need to implement the interface [URLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/URLFilter.java) which defines a single method : 
 
 ```
 public String filter (URL sourceUrl, Metadata sourceMetadata,
             String urlToFilter);
+```
 
+and inherits a default one from [Configurable](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/util/Configurable.java)
+
+```
 public void configure(Map stormConf, JsonNode jsonNode);
 ```
 
