@@ -20,6 +20,9 @@ The [BasicURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/
 
 The [BasicURLNormalizer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/basic/BasicURLNormalizer.java) removes the anchor part of URLs based on the value of the parameter `removeAnchorPart`. It also removed query elements based on the configuration and whether their value corresponds to a 32-bit hash.
 
+**Host**
+The [HostURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/host/HostURLFilter.java) filters URLs based on whether they belong to the same host or domain name as the source URL. This is configured with the parameter `ignoreOutsideDomain` and `ignoreOutsideHost`. The latter takes precedence over the former.
+
 **MaxDepth**
 The [MaxDepthFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/depth/MaxDepthFilter.java) is configured with the parameter `max Depth` and requires `metadata.track.depth` to be set to true in the [[Configuration]]. This removes outlinks found too far from the seed URL and is a way of controling the expansion of the crawl.
 
@@ -27,8 +30,8 @@ If the filter is configured with a value of 0, then all outlinks will be removed
 
 The max depth can also be set on a per seed basis, using the key/value `max.depth`, which is automatically transfered to the outlinks if `metadata.track.depth` is set to true.
 
-**Host**
-The [HostURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/host/HostURLFilter.java) filters URLs based on whether they belong to the same host or domain name as the source URL. This is configured with the parameter `ignoreOutsideDomain` and `ignoreOutsideHost`. The latter takes precedence over the former.
+**Metadata**
+The [MetadataFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/metadata/MetadataFilter.java) filters URLs based on metadata in the source document.
 
 **RegexURLFilter**
 The [RegexURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/regex/RegexURLFilter.java) uses a [configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/default-regex-filters.txt) or a JSON ArrayNode containing regular expressions to determine whether a URL should be kept or not.
