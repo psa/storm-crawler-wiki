@@ -2,16 +2,18 @@ The URL filters can be used to both remove or modify incoming URLS (unlike Nutch
 
 URLFilters need to implement the interface [URLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/URLFilter.java) which has two methods : 
 
-_public String filter (URL sourceUrl, Metadata sourceMetadata,
-            String urlToFilter);_
+```
+public String filter (URL sourceUrl, Metadata sourceMetadata,
+            String urlToFilter);
 
-_public void configure(Map stormConf, JsonNode jsonNode);_
+public void configure(Map stormConf, JsonNode jsonNode);
+```
 
-The configuration is done via a JSON file which is loaded by the wrapper class [URLFilters](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/URLFilters.java). The URLFilter instances can be used directly but it is easier to use the class URLFilters instead. The config map from Storm can also be used to configure the filters.
+The configuration is done via a JSON file which is loaded by the wrapper class [URLFilters](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/URLFilters.java). The URLFilter instances can be used directly but it is easier to use the class URLFilters instead. Some filter implementations can also be configured with the [standard configuration mechanism](https://github.com/DigitalPebble/storm-crawler/wiki/Configuration).
 
 Here is an example of a [JSON configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/resources/urlfilters.json).
 
-The JSON configuration allows to load several instances of the same filtering class with different parameters,  allows complex configuration objects since it makes no assumptions about the content of the field 'param'. The URLFilters are executed in the order in which they are defined in the JSON file.
+The JSON configuration allows to load several instances of the same filtering class with different parameters and can handle complex configuration objects since it makes no assumptions about the content of the field 'param'. The URLFilters are executed in the order in which they are defined in the JSON file.
 
 The following URL filters are provided as part of the core code.
 
