@@ -20,6 +20,35 @@ The [BasicURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/
 
 The [BasicURLNormalizer](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/basic/BasicURLNormalizer.java) removes the anchor part of URLs based on the value of the parameter `removeAnchorPart`. It also removed query elements based on the configuration and whether their value corresponds to a 32-bit hash.
 
+**FastURLFilter**
+The [FastURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/regex/FastURLFilter.java
+) is based on regex patterns and organised by scope [host | domain | metadata | global]. For a given URL, the scopes are tried in the order given above and the URL is kept or removed based on the first matching rule. The default policy is to accept a URL if no match is found.
+
+The resource file is in JSON and looks like so:
+
+```
+  [{
+          "scope": "GLOBAL",
+          "patterns": [
+              "DenyPathQuery \\.jpg"
+          ]
+      },
+      {
+          "scope": "domain:stormcrawler.net",
+          "patterns": [
+              "AllowPath /digitalpebble/",
+              "DenyPath .+"
+          ]
+      },
+      {
+          "scope": "metadata:key=value",
+          "patterns": [
+             "DenyPath .+"
+          ]
+      }
+  ]
+```
+
 **Host**
 The [HostURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/host/HostURLFilter.java) filters URLs based on whether they belong to the same host or domain name as the source URL. This is configured with the parameter `ignoreOutsideDomain` and `ignoreOutsideHost`. The latter takes precedence over the former.
 
