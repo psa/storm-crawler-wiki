@@ -55,6 +55,8 @@ The resource file is in JSON and looks like so:
   ]
 ```
 
+_DenyPathQuery_ indicates that the pattern should be applied on the path URL path and the query element, whereas _DenyPath_ means the path alone.
+
 **Host**
 The [HostURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/host/HostURLFilter.java) filters URLs based on whether they belong to the same host or domain name as the source URL. This is configured with the parameter `ignoreOutsideDomain` and `ignoreOutsideHost`. The latter takes precedence over the former.
 
