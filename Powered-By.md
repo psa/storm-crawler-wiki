@@ -14,5 +14,6 @@
 * [WizeNoze](http://www.wizenoze.com/en/)
 * [IProduct.io](http://iproduct.io/)
 * [CGI](https://www.cgi.com/)
+* [MirasText](https://github.com/miras-tech/MirasText)
 
 Drop us a line at stormcrawler@digitalpebble.com if you want to be added to this page.
