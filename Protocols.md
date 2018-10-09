@@ -18,7 +18,7 @@ See [[HTTPProtocol]] for the effect of metadata content on protocol behaviour.
 | Basic authentication |      [Y](https://github.com/DigitalPebble/storm-crawler/pull/589)     |    N   |     N    |
 | proxy (w. credentials?) |       Y / Y     |  Y / N      |      ?    |
 | interruptible / trimmable [#463](https://github.com/DigitalPebble/storm-crawler/issues/463)|    N / Y       |   Y / Y    |    Y / N      |
-| cookies                   |     Y       |   N     |    N      |
+| cookies                   |     Y       |   [Y](https://github.com/DigitalPebble/storm-crawler/issues/632)     |    N      |
 | response headers                   |     Y       |   Y     |    N      |
 | HEAD method [#485](https://github.com/DigitalPebble/storm-crawler/issues/485)|     Y       |   N     |    N      |
 | verbatim response header |  [Y](https://github.com/DigitalPebble/storm-crawler/issues/317)     |   [Y](https://github.com/DigitalPebble/storm-crawler/issues/506)    |    N      |
