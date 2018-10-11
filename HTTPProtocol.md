@@ -5,3 +5,7 @@ The `knownMetadata` argument to `HTTPProtocol.getProtocolOutput()` can affect th
 * `cachedLastModified`: If this key is present in `knownMetadata`, the protocol will use the metadata value as the date for the `If-Modified-Since` header field of the HTTP request. If the key is not present, the `If-Modified-Since` field won't be added to the request header.
 
 * `cachedEtag`: If this key is present in `knownMetadata`, the protocol will use the metadata value as the ETag for the `If-None-Match` header field of the HTTP request. If the key is not present, the `If-None-Match` field won't be added to the request header.
+
+* `http.accept`: If this key is present in `knownMetadata`, the protocol will use the value to override the value for the `Accept` header field of the HTTP request. If the key is not present, the `http.accept` global configuration value is used instead.
+
+* `http.accept.language`: If this key is present in `knownMetadata`, the protocol will use the value to override the value for the `Accept-Language` header field of the HTTP request. If the key is not present, the `http.accept.language` global configuration value is used instead.
