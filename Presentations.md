@@ -25,6 +25,9 @@
 
 ## Release overviews
 
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.11]
+(https://digitalpebble.blogspot.com/2018/10/whats-new-in-stormcrawler-111.html)**
+
 * _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.10]
 (http://digitalpebble.blogspot.com/2018/06/whats-new-in-stormcrawler-110.html)**_
 
