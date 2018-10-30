@@ -1,3 +1,0 @@
-* [PopSugar  - microdata parser](https://github.com/PopSugar/storm-crawler-extensions/tree/master/microdata-parser) A ParseFilter to be plugged in with the ParserBolt (or the JSoupParser). It extracts all the microdata stored in the page and adds it to the metadata map using a key-dotted path.
-
-* ~~[WARC](https://github.com/DigitalPebble/sc-warc) A custom bolt for generating WARC files on HDFS~~ => now part of the main repository
