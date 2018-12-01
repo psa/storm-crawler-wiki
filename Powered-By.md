@@ -15,5 +15,6 @@
 * [IProduct.io](http://iproduct.io/)
 * [CGI](https://www.cgi.com/)
 * [MirasText](https://github.com/miras-tech/MirasText)
+* [G2 Web Services](https://www.g2webservices.com/)
 
 Drop us a line at stormcrawler@digitalpebble.com if you want to be added to this page.
