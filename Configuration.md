@@ -100,6 +100,7 @@ _This refers to persisting the status of a URL (e.g. ERROR, DISCOVERED etc.) alo
 | key                    | default value | description                            |
 |------------------------|---------------|----------------------------------------|
 | parser.emitOutlinks    | `true`        |  Whether or not to emit outgoing links found in the parsed HTML document to the [StatusStrean](https://github.com/DigitalPebble/storm-crawler/wiki/statusStream) as `DISCOVERED`. Your [URL Filters](https://github.com/DigitalPebble/storm-crawler/wiki/URLFilters) are applied to outgoing links before they are emitted. This option being `true` is crucial if you are building a recursive crawler. |
+| parser.emitOutlinks.max.per.page    | -1 | limits the number of links sent from a page
 | track.anchors          | `true`        | Whether or not to add the anchor text (can be > 1) of (filtered) outgoing links with the key `anchors` to the Metadata of a tuple. 
 
 ### Metadata
