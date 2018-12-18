@@ -1,5 +1,7 @@
 ## Talks, tutorials and interviews
 
+* **Harvesting Online Health Information**, Richar Zowalla \[[slides](https://www.slideshare.net/secret/v8Y0qFlGBk7IbB)\]
+
 * _**Tutorial: StormCrawler 1.10 + Apache SOLR 4.7.0**_ (https://youtu.be/F8nvGj03XLo)
 
 * **Patent-Crawler: A Web Crawler to Gather Virtual Patent Marking Information**, Etienne Orliac, l’Université de Lausanne/École Polytechnique Fédérale de Lausanne (UNIL/EPFL) \[[slides](http://www.hpcadvisorycouncil.com/events/2018/swiss-workshop/pdf/Weds11April/Orliac_PatentCrawler_Wed110418.pdf) - [video](https://youtu.be/2v6Y_3Q0vT0)\]
