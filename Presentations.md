@@ -27,29 +27,23 @@
 
 ## Release overviews
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.12]
-(https://digitalpebble.blogspot.com/2018/11/whats-new-in-stormcrawler-112.html)**
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.13](https://digitalpebble.blogspot.com/2019/01/whats-new-in-stormcrawler-113.html)**
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.11]
-(https://digitalpebble.blogspot.com/2018/10/whats-new-in-stormcrawler-111.html)**
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.12](https://digitalpebble.blogspot.com/2018/11/whats-new-in-stormcrawler-112.html)**
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.10]
-(http://digitalpebble.blogspot.com/2018/06/whats-new-in-stormcrawler-110.html)**_
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.11](https://digitalpebble.blogspot.com/2018/10/whats-new-in-stormcrawler-111.html)**
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.9]
-(https://digitalpebble.blogspot.co.uk/2018/05/whats-new-in-stormcrawler-19.html)**_
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.10](http://digitalpebble.blogspot.com/2018/06/whats-new-in-stormcrawler-110.html)**_
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.8]
-(https://digitalpebble.blogspot.co.uk/2018/03/whats-new-in-stormcrawler-18.html)**_
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.9](https://digitalpebble.blogspot.co.uk/2018/05/whats-new-in-stormcrawler-19.html)**_
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.7]
-(http://digitalpebble.blogspot.co.uk/2017/11/whats-new-in-stormcrawler-17.html)**_
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.8](https://digitalpebble.blogspot.co.uk/2018/03/whats-new-in-stormcrawler-18.html)**_
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.2]
-(http://digitalpebble.blogspot.co.uk/2016/10/whats-new-in-stormcrawler-12.html)**_
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.7](http://digitalpebble.blogspot.co.uk/2017/11/whats-new-in-stormcrawler-17.html)**_
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.1]
-(http://digitalpebble.blogspot.co.uk/2016/09/whats-new-in-stormcrawler-11.html)**_
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.2](http://digitalpebble.blogspot.co.uk/2016/10/whats-new-in-stormcrawler-12.html)**_
+
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.1](http://digitalpebble.blogspot.co.uk/2016/09/whats-new-in-stormcrawler-11.html)**_
 
 * _**DigitalPebble's Blog : 1.0 [StormCrawler : the Coming of Age](http://digitalpebble.blogspot.co.uk/2016/07/stormcrawler-coming-of-age.html)**_ 
 
