@@ -69,5 +69,8 @@ The [LinkParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master
 The [MD5SignatureParseFilter](
 https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/MD5SignatureParseFilter.java) generates a MD5 signature of a document based on the binary content, text or URL (as a last resort). Can be used in combination with the *ContentFilter* above so that the text used for the signature excludes any boilerplate.
 
+**MimeTypeNormalization**
+The [MimeTypeNormalization](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/MimeTypeNormalization.java) converts the mime-type values (returned by the servers or guessed based on the content) as human-readable values such as _pdf_, _html_ or _image_ and stores them in the metadata. This can be used during indexing to generate a field used for filtering search results.
+
 **XPathFilter**
 The [XPathFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/XPathFilter.java) allows to define XPath expressions to extract data from the page and store them in the Metadata object. 
