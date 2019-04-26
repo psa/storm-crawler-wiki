@@ -104,3 +104,6 @@ RegexURLNormalizer config sample in JSON format:<br/>
 
 **RobotsFilter**
 The [RobotsFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/robots/RobotsFilter.java) discards URLs based on the robots.txt directives. This is meant to be used on small, limited crawls where the number of hosts is finite. Using this on a larger or open crawl would have a negative impact on performance as the filter would try to retrieve the robots.txt files for any host found.
+
+**SitemapFilter**
+The [SitemapFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/sitemap/SitemapFilter.java) discards the outlinks of URLs which are not sitemaps when sitemaps have been found.
