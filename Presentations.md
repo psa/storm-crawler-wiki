@@ -27,9 +27,11 @@
 
 ## Release overviews
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.13](https://digitalpebble.blogspot.com/2019/01/whats-new-in-stormcrawler-113.html)**
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.14](https://digitalpebble.blogspot.com/2019/05/whats-new-in-stormcrawler-114.html)**_
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.12](https://digitalpebble.blogspot.com/2018/11/whats-new-in-stormcrawler-112.html)**
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.13](https://digitalpebble.blogspot.com/2019/01/whats-new-in-stormcrawler-113.html)**_
+
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.12](https://digitalpebble.blogspot.com/2018/11/whats-new-in-stormcrawler-112.html)**_
 
 * _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.11](https://digitalpebble.blogspot.com/2018/10/whats-new-in-stormcrawler-111.html)**
 
