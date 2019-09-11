@@ -71,7 +71,8 @@ The max depth can also be set on a per seed basis, using the key/value `max.dept
 The [MetadataFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/metadata/MetadataFilter.java) filters URLs based on metadata in the source document.
 
 **RegexURLFilter**
-The [RegexURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/regex/RegexURLFilter.java) uses a [configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/archetype/src/main/resources/archetype-resources/src/main/resources/default-regex-filters.txt) or a JSON ArrayNode containing regular expressions to determine whether a URL should be kept or not.
+The [RegexURLFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/filtering/regex/RegexURLFilter.java) uses a [configuration file](https://github.com/DigitalPebble/storm-crawler/blob/master/archetype/src/main/resources/archetype-resources/src/main/resources/default-regex-filters.txt) or a JSON ArrayNode containing regular expressions to determine whether a URL should be kept or not. The most specific rule must be placed first as a URL is kept or removed based on the first matching rule.
+
 <br/>
 RegexURLFilter config sample in JSON format:<br/>
 ```
