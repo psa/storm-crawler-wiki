@@ -1,5 +1,7 @@
 ## Talks, tutorials and interviews
 
+* **StormCrawler open source web crawler strengthened by Elasticsearch, Kibana**,  (https://www.elastic.co/blog/stormcrawler-open-source-web-crawler-strengthened-by-elasticsearch-kibana)
+
 * **Harvesting Online Health Information**, Richar Zowalla \[[slides](https://www.slideshare.net/secret/v8Y0qFlGBk7IbB)\]
 
 * _**Tutorial: StormCrawler 1.10 + Apache SOLR 4.7.0**_ (https://youtu.be/F8nvGj03XLo)
@@ -27,8 +29,7 @@
 
 ## Release overviews
 
-* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.16]
-(https://digitalpebble.blogspot.com/2020/01/whats-new-in-stormcrawler-116.html)**_
+* _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.16](https://digitalpebble.blogspot.com/2020/01/whats-new-in-stormcrawler-116.html)**_
 
 * _**DigitalPebble's Blog : what's new in [Storm-Crawler 1.15](https://digitalpebble.blogspot.com/2019/09/stormcrawler-1.html)**_
 
