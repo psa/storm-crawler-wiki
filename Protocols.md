@@ -15,7 +15,7 @@ See [[HTTPProtocol]] for the effect of metadata content on protocol behaviour.
 
 | Features             | HTTPClient | OKhttp | Selenium |
 |----------------------|:----------:|:------:|:--------:|
-| Basic authentication |      [Y](https://github.com/DigitalPebble/storm-crawler/pull/589)     |    N   |     N    |
+| Basic authentication |      [Y](https://github.com/DigitalPebble/storm-crawler/pull/589)     |    [Y](https://github.com/DigitalPebble/storm-crawler/issues/792  |     N    |
 | proxy (w. credentials?) |       Y / Y     |  Y / [Y](https://github.com/DigitalPebble/storm-crawler/issues/751)      |      ?    |
 | interruptible / trimmable [#463](https://github.com/DigitalPebble/storm-crawler/issues/463)|    N / Y       |   Y / Y    |    Y / N      |
 | cookies                   |     Y       |   [Y](https://github.com/DigitalPebble/storm-crawler/issues/632)     |    N      |
