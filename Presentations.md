@@ -1,5 +1,7 @@
 ## Talks, tutorials and interviews
 
+* **Tutorial: StormCrawler 1.16 + Elasticsearch 7.5.0** (https://youtu.be/8kpJLPdhvLw) 
+
 * **StormCrawler open source web crawler strengthened by Elasticsearch, Kibana**,  (https://www.elastic.co/blog/stormcrawler-open-source-web-crawler-strengthened-by-elasticsearch-kibana)
 
 * **Harvesting Online Health Information**, Richar Zowalla \[[slides](https://www.slideshare.net/secret/v8Y0qFlGBk7IbB)\]
