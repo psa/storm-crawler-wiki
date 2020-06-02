@@ -18,3 +18,6 @@
 ## Resources
 * [Presentations](https://github.com/DigitalPebble/storm-crawler/wiki/Presentations)
 * [Powered By](https://github.com/DigitalPebble/storm-crawler/wiki/Powered-By)
+
+## Sponsors
+* [[Sponsors]]
