@@ -50,9 +50,6 @@ for exclusions e.g.
 **CommaSeparatedToMultivaluedMetadata**
 [CommaSeparatedToMultivaluedMetadata](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/CommaSeparatedToMultivaluedMetadata.java) rewrites single metadata containing comma separated values into multiple values for the same key, useful for instance for keyword tags.
 
-**ContentFilter**
-The [ContentFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/ContentFilter.java) allows to restrict the text of a document to the text covered by a Xpath expression.
-
 **DebugParseFilter**
 The [DebugParseFilter](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/parse/filter/DebugParseFilter.java) dumps a XML representation of the DOM structure to a temporary file.
 
