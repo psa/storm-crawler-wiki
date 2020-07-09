@@ -22,6 +22,7 @@ See [[HTTPProtocol]] for the effect of metadata content on protocol behaviour.
 | response headers                   |     Y       |   Y     |    N      |
 | trust all certificates                  |     N       |   [Y](https://github.com/DigitalPebble/storm-crawler/issues/615)      |    N      |
 | HEAD method [#485](https://github.com/DigitalPebble/storm-crawler/issues/485)|     Y       |   N     |    N      |
+| POST method [#641](https://github.com/DigitalPebble/storm-crawler/issues/641)|     N       |   Y     |    N      |
 | verbatim response header |  [Y](https://github.com/DigitalPebble/storm-crawler/issues/317)     |   [Y](https://github.com/DigitalPebble/storm-crawler/issues/506)    |    N      |
 | verbatim request header |  [N](https://github.com/DigitalPebble/storm-crawler/issues/317)     |    [Y](https://github.com/DigitalPebble/storm-crawler/issues/506)    |    N      |
 | navigation and javascript | N | N | Y |
