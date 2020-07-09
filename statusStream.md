@@ -18,10 +18,10 @@ A bolt which sends tuples on the _status_ stream declares its output in the foll
 as you can see for instance in [SimpleFetcherBolt](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/bolt/SimpleFetcherBolt.java#L149).
 
 The [Status](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/persistence/Status.java) enum has the following values \:
-* DISCOVERED \: outlinks found by the parsers. The URLs can be already known in the storage.
+* DISCOVERED \: outlinks found by the parsers or "seed" URLs emitted into the topology by one of the [spouts](https://stormcrawler.net/docs/api/com/digitalpebble/stormcrawler/spout/package-summary.html) or "injected" into the storage. The URLs can be already known in the storage.
 * REDIRECTION \: set by the fetcher bolts.
 * FETCH_ERROR \: set by the fetcher bolts.
-* ERROR \: used by either the fetcher or parser bolts.
+* ERROR \: used by either the fetcher, parser or indexer bolts.
 * FETCHED\: set by the StatusStreamBolt bolt (see below).
 
 The difference between FETCH_ERROR and ERROR is that the former is possibly transient whereas the latter is terminal. The bolt which is in charge of updating the status (see below) can then decide when and whether to schedule a new fetch for a URL based on the status value.
