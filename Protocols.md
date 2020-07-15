@@ -1,4 +1,4 @@
-The following network protocols are implemented in storm-crawler:
+The following network protocols are implemented in StormCrawler:
 
 # File
 * [FileProtocol](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/protocol/file/FileProtocol.java)
@@ -6,6 +6,13 @@ The following network protocols are implemented in storm-crawler:
 # HTTP/S
 
 See [[HTTPProtocol]] for the effect of metadata content on protocol behaviour.
+
+To change the implementation, add the following lines to your _crawler-conf.yaml_
+
+```
+  http.protocol.implementation: "com.digitalpebble.stormcrawler.protocol.okhttp.HttpProtocol"
+  https.protocol.implementation: "com.digitalpebble.stormcrawler.protocol.okhttp.HttpProtocol"
+```
 
 * [HttpClient](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/protocol/httpclient/HttpProtocol.java)
 * [Selenium](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/protocol/selenium/SeleniumProtocol.java)
