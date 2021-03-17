@@ -3,7 +3,7 @@ There are actually 2 different bolts for fetching the content of URLs.
 * [SimpleFetcherBolt](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/bolt/SimpleFetcherBolt.java)
 * [FetcherBolt](https://github.com/DigitalPebble/storm-crawler/blob/master/core/src/main/java/com/digitalpebble/stormcrawler/bolt/FetcherBolt.java)
 
-Both declare the same output 
+Both declare the same output
 
 ```
    declarer.declare(new Fields("url", "content", "metadata"));
@@ -12,7 +12,7 @@ Both declare the same output
                 new Fields("url", "metadata", "status"));
 ```
 
-with the [status stream](statusStream) being used for handling redirections, restrictions by robots directives or fetch errors whereas the default stream gets the binary content returned by the server as well as the metadata to the following components (typically a parsing bolt).
+with the [status stream](StatusStream) being used for handling redirections, restrictions by robots directives or fetch errors whereas the default stream gets the binary content returned by the server as well as the metadata to the following components (typically a parsing bolt).
 
 Both use the same [protocol](Protocols) implementations and [URLFilters](URLFilters) to control the redirections.
 

@@ -4,7 +4,7 @@
 * [[Introduction]]
 * [[Configuration]]: how to configure the storm-crawler
 * [[Registering Metadata for Serialization]]: If your topology doesn't extend `ConfigurableTopology`, you will need to manually register storm-crawler's `Metadata` class for serialization in Storm.
-* [Status Streams](statusStream): Understanding how streams are used in Storm Crawler
+* [Status Streams](StatusStream): Understanding how streams are used in Storm Crawler
 * [[Debug with Eclipse]]
 
 ## Components

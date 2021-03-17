@@ -3,7 +3,7 @@
   - [Configuration](Configuration)
   - [Debugging with Eclipse](Debug-with-Eclipse)
   - [Registering Metadata for Serialization](Registering-Metadata-for-Serialization)
-  - [Status Stream](statusStream)
+  - [Status Stream](StatusStream)
 - Components
   - Filters
     - [ParseFilters](ParseFilters)
